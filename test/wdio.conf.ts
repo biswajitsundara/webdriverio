@@ -162,10 +162,10 @@ export const config: WebdriverIO.Config = {
     reporters: [
         'spec',
         ['mochawesome',{
-            outputDir: './Results',
+            outputDir: './results',
             outputFileFormat: function(opts) { 
                 //return `results-${opts.cid}.${opts.capabilities}.json`
-                return 'MyReport.json'
+                return 'my-report.json'
             }
         }]
       ],
